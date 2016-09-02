@@ -28,7 +28,7 @@ export class StarWars {
 				});
 
 				// put in cache, if its not already there...
-				data.results.forEach(person => {
+				data.results.forEach((person:any) => {
 					if (!this.personCache[person.id]) {
 						this.personCache[person.id] = person;
 					}

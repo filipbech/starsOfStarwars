@@ -2,7 +2,7 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
 @Component({
 	selector:'single-character',
 	template:`
-		<button (click)="toggleCollection(person.id)">Add</button>
+		<button (click)="toggleCollection(person.id)">Toggle fav</button>
 		<a [routerLink]="['/character/'+person.id]">{{person.name}}</a>`,
 })
 export class SingleCharacterComponent {

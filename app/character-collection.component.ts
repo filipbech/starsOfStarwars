@@ -20,7 +20,7 @@ export class CharacterCollectionComponent {
 		this.collection = starwars.getCollection();
 	}
 
-	onToggleCollection(id) {
+	onToggleCollection(id:number) {
 		this.starwars.toggleCollection(id);
 	}
 }
