@@ -1,7 +1,5 @@
 import {Component} from '@angular/core';
 import {StarWars} from './starwars.service';
-import {ROUTER_DIRECTIVES} from '@angular/router';
-import {SingleCharacterComponent} from './single-character.component';
 
 @Component({
 	selector:'character-list',
@@ -11,8 +9,7 @@ import {SingleCharacterComponent} from './single-character.component';
 			<li *ngFor="let person of characters"><single-character [person]="person" (onToggleCollection)="toggleCollection($event)"></single-character></li>
 		</ul>
 		<button (click)="getNext()">Get more</button>
-	`,
-    directives: [ROUTER_DIRECTIVES, SingleCharacterComponent]
+	`
 })
 export class CharacterListComponent {
 	characters:any[] = [];

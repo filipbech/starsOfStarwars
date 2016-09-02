@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {StarWars} from './starwars.service'
-import {SingleCharacterComponent} from './single-character.component';
 
 @Component({
 	selector:'character-collection',
@@ -11,8 +10,7 @@ import {SingleCharacterComponent} from './single-character.component';
 				<single-character [person]="person" (onToggleCollection)="onToggleCollection($event)"></single-character>
 			</li>
 		</ul>
-	`,
-	directives:[SingleCharacterComponent]
+	`
 })
 export class CharacterCollectionComponent {
 	collection:any;
