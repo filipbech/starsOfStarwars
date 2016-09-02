@@ -13,6 +13,8 @@ import { CharacterDetailComponent } from './character-detail.component';
 import { CharacterCollectionComponent } from './character-collection.component';
 import { CharacterEditComponent } from './character-edit.component';
 import { CharacterEditNewComponent } from './character-edit-new.component';
+import { SingleCharacterComponent } from './single-character.component';
+
 
 
 // Uncomment this to go in Production mode
@@ -33,7 +35,8 @@ import { CharacterEditNewComponent } from './character-edit-new.component';
 		CharacterDetailComponent,
 		CharacterCollectionComponent,
 		CharacterEditComponent,
-		CharacterEditNewComponent
+		CharacterEditNewComponent,
+		SingleCharacterComponent
 	],
 	bootstrap: [
 		AppComponent
