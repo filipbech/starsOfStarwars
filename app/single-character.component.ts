@@ -10,7 +10,7 @@ export class SingleCharacterComponent {
 	@Output() onToggleCollection = new EventEmitter();
 	@Input() person:any;
 
-	toggleCollection(id:number) {
+	toggleCollection(id:string) {
 		this.onToggleCollection.emit(id);
 	}
 

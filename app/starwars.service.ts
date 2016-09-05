@@ -48,7 +48,7 @@ export class StarWars {
 			.map((person:any) => StarWars.addId(person));
 	}
 
-	toggleCollection(id:number) {
+	toggleCollection(id:string) {
 		let index = this.collection.indexOf(id);
 		if(index > -1) {
 			this.collection.splice(index,1);

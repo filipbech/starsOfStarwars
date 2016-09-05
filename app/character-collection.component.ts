@@ -15,10 +15,11 @@ import {StarWars} from './starwars.service'
 export class CharacterCollectionComponent {
 	collection:any;
 	constructor(private starwars:StarWars) {
-		this.collection = starwars.getCollection();
+		this.collection = this.starwars.getCollection();
 	}
 
-	onToggleCollection(id:number) {
+	onToggleCollection(id:string) {
 		this.starwars.toggleCollection(id);
+		this.collection = this.starwars.getCollection();
 	}
 }

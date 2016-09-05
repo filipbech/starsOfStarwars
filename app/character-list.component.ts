@@ -16,7 +16,7 @@ export class CharacterListComponent {
 
 	page = 1;
 
-	toggleCollection(id:number) {
+	toggleCollection(id:string) {
 		this.starwars.toggleCollection(id);
 	}
 
