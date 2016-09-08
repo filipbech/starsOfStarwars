@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { routing } from './app.routing';
 import { AppComponent }  from './app.component';
 import { StarWars } from './starwars.service';
+import { Cache } from './cache.service';
 import { HttpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -44,7 +45,8 @@ import { NotFoundComponent } from './not-found.component';
 		AppComponent
 	],
 	providers: [
-		StarWars
+		StarWars,
+		Cache
 	]
 })
 export class AppModule { }
