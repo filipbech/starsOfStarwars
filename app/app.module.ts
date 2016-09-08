@@ -14,6 +14,7 @@ import { CharacterCollectionComponent } from './character-collection.component';
 import { CharacterEditComponent } from './character-edit.component';
 import { CharacterEditNewComponent } from './character-edit-new.component';
 import { SingleCharacterComponent } from './single-character.component';
+import { NotFoundComponent } from './not-found.component';
 
 
 
@@ -36,7 +37,8 @@ import { SingleCharacterComponent } from './single-character.component';
 		CharacterCollectionComponent,
 		CharacterEditComponent,
 		CharacterEditNewComponent,
-		SingleCharacterComponent
+		SingleCharacterComponent,
+		NotFoundComponent
 	],
 	bootstrap: [
 		AppComponent

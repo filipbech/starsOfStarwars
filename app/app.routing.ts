@@ -6,6 +6,7 @@ import { CharacterListComponent } from './character-list.component';
 import { CharacterDetailComponent } from './character-detail.component';
 import { CharacterEditComponent } from './character-edit.component';
 import { CharacterCollectionComponent } from './character-collection.component';
+import { NotFoundComponent } from './not-found.component';
 
 const appRoutes: Routes = [
   {
@@ -27,6 +28,10 @@ const appRoutes: Routes = [
   {
     path: 'character/:characterId/:edit',
     component: CharacterDetailComponent
+  },
+  {
+    path:'**',
+    component:NotFoundComponent
   }
 ];
 
