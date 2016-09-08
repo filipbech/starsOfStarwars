@@ -7,7 +7,7 @@ export class StarWars {
 	//todo: persist cache to device (localstorage, idb) - should be other service!
 	private personCache = {};
 
-	private collection:any[] = [];
+	private collection:string[] = [];
 
 	static addId(person:any) {
 		person.id = person.url.match(/(\d+)\/$/)[1];
@@ -38,7 +38,7 @@ export class StarWars {
 			});
 	}
 
-	getPerson(id:number) {
+	getPerson(id:string) {
 		if(this.personCache[id.toString()]) {
 			return Observable.of(this.personCache[id]);
 		}
